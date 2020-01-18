@@ -1,2 +1,7 @@
-var chalk = require('chalk');
-console.log(chalk.red("Testing!") );
+const stephen = require("./Stephen.js");
+
+let p = new stephen("Stephen", [
+    "#00FFE1",
+]);
+
+p.speak();

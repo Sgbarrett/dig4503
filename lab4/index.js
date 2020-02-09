@@ -4,7 +4,7 @@ const App = Express();
 const pokemon=require("json-pokemon");
 const port=80;
 
-//create the path and the arrow function 
+//create the route and the arrow function 
 App.get("/id/:id", (req,res) => {
     //set result variable to the invalid statement
     let result = "The id you have entered is invalid";
@@ -27,7 +27,7 @@ App.get("/id/:id", (req,res) => {
     
 });  
 // make sure when testing the name entry that the name of the pokemon is capitalized ex. Charmander .______.
-// set path and arrow function 
+// set the route and arrow function 
 App.get("/name/:name", (req,res) => {
     //set variable rusult to this name is invalid string
     let result = "The name you have entered is invalid";

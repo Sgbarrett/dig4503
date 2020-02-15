@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function clicker(){
+
+            event.preventDefault();
+
+            let element = document.querySelector("input");
+
+            console.log(element.value);
+
+            fetch("/api/5" + element.value).then((res)=>{
+                return res.json();
+
+            }).then((processed)=>{
+                let reporting = document.getElementById("reportingArea");
+
+                if(processed.error) {
+                    reporting.innerHTML = processed.error;
+                } else {
+                    reporting.innerHTML="secret!";
+
+                }
+            });
+            
+        }
+    </script>
+
+    <form onsubmit="clicker(event)">
+        <input id="pokemonId" type="text">
+        <button> Submit </button>
+
+
+    </form>
+    <div id = "reportingArea"></div>
+   
+</body>
+</html>

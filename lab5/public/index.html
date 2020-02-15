@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function readId(event) {
+            event.preventDefault();
+
+            let element = document.querySelector('#id');
+            fetch('/id/' + element.value)
+
+            .then(res => {
+            return res.json();
+          })
+
+          .then(processed => {
+            let reporting = document.querySelector('#pokedex');
+
+            if (processed.error) {
+              reporting.innerHTML = processed.error;
+            } else {
+              reporting.innerHTML = processed.name;
+            }
+          });
+
+        element.value = '';
+      }
+       
+      function readName(event) {
+            event.preventDefault();
+            let element = document.querySelector('#name');
+            fetch('/name/' + element.value)
+
+            .then(res => {
+            return res.json();
+          })
+
+          .then(processed => {
+            let reporting = document.querySelector('#pokedex');
+
+            if (processed.error) {
+              reporting.innerHTML = processed.error;
+            } else {
+              reporting.innerHTML = processed.name;
+            }
+          });
+
+        element.value = '';
+      }
+    
+    
+      
+
+    </script>
+
+    <h1>Pokemon Id</h1>
+    <form onSubmit="readId(event)" >
+        <input type="text" id="id">
+        <button >SUBMIT</button>
+    </form>
+
+    <h1>Pokemon name</h1>
+    <form onSubmit="readName(event)">
+        <input   type="text" id="name">
+        <button >SUBMIT</button>
+    </form>
+   <hr></hr>
+
+    <h1>Pokemon Database</h1>
+    <div id="pokedex"></div>
+   
+</body>
+</html>

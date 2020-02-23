@@ -20,7 +20,7 @@
           })
 
           .then(processed => {
-            let reporting = document.querySelector('#pokedex');
+            let reporting = document.querySelector('#reportingArea');
 
             if (processed.error) {
               reporting.innerHTML = processed.error;
@@ -42,7 +42,7 @@
           })
 
           .then(processed => {
-            let reporting = document.querySelector('#pokedex');
+            let reporting = document.querySelector('#reportingArea');
 
             if (processed.error) {
               reporting.innerHTML = processed.error;
@@ -73,7 +73,7 @@
    <hr></hr>
 
     <h1>Pokemon Database</h1>
-    <div id="pokedex"></div>
+    <div id="reportingArea"></div>
    
 </body>
 </html>

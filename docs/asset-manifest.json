@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dig4503/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/dig4503/static/js/main.2c576971.chunk.js",
+    "main.js.map": "/dig4503/static/js/main.2c576971.chunk.js.map",
+    "runtime-main.js": "/dig4503/static/js/runtime-main.98ea816c.js",
+    "runtime-main.js.map": "/dig4503/static/js/runtime-main.98ea816c.js.map",
+    "static/js/2.f92d253c.chunk.js": "/dig4503/static/js/2.f92d253c.chunk.js",
+    "static/js/2.f92d253c.chunk.js.map": "/dig4503/static/js/2.f92d253c.chunk.js.map",
+    "index.html": "/dig4503/index.html",
+    "precache-manifest.4638f2d37be088193a0d0e1df0bfdc9a.js": "/dig4503/precache-manifest.4638f2d37be088193a0d0e1df0bfdc9a.js",
+    "service-worker.js": "/dig4503/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/dig4503/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.f92d253c.chunk.js.LICENSE.txt": "/dig4503/static/js/2.f92d253c.chunk.js.LICENSE.txt",
+    "static/media/alps.jpg": "/dig4503/static/media/alps.28bb0336.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98ea816c.js",
+    "static/js/2.f92d253c.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.2c576971.chunk.js"
+  ]
+}
